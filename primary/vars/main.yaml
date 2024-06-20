@@ -1,0 +1,32 @@
+# General Variables
+gitlab_external_url: "http://gitlab.example.com"
+gitlab_license_file_path: "{{ playbook_dir }}/files/license"
+primary_site_ip: "10.0.0.1"
+secondary_site_ip: "10.0.0.2"
+
+# LDAP Configuration
+ldap_host: "10.0.0.1"
+ldap_bind_dn: "cn=Directory Manager"
+ldap_password: "P@ssw0rd"
+ldap_base: "cn=users,cn=accounts,dc=linux,dc=example,dc=com"
+
+# SMTP Configuration
+smtp_address: "10.0.0.3"
+smtp_port: "25"
+smtp_user: "postmaster@example.com"
+smtp_password: "redhat"
+
+
+# Geo Configuration
+geo_node_name: "primary-gitlab.example.com"
+
+# Database Passwords
+gitlab_db_password: "Password"
+gitlab_replicator_password: "Password"
+
+# HTTP Server Configuration for GitLab RPM
+http_server: "http://10.10.0.1"
+gitlab_rpm: "gitlab-ee-17.0.1-ee.0.el8.x86_64.rpm"
+
+# Admin Password
+gitlab_password: "password"

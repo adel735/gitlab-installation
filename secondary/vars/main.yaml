@@ -1,0 +1,36 @@
+# General Variables
+gitlab_external_url: "http://gitlab.example.com"
+primary_site_ip: "10.0.0.1"
+secondary_site_ip: "10.0.0.2"
+
+# LDAP Configuration
+ldap_host: "10.0.0.5"
+ldap_bind_dn: "cn=Directory Manager"
+ldap_password: "P@ssw0rd"
+ldap_base: "cn=users,cn=accounts,dc=linux,dc=example,dc=com"
+
+# SMTP Configuration
+smtp_address: "10.0.0.5"
+smtp_port: "25"
+smtp_user: "postmaster@example.com"
+smtp_password: "redhat"
+
+
+# Geo Configuration
+geo_node_name: "secondary-gitlab.example.com"
+replication_slot_name: "secondary_gitlab" #may only contain lower case letters, numbers, and the underscore character
+
+# Database Passwords
+gitlab_db_password: "password"
+gitlab_replicator_password: "password"
+
+# HTTP Server Configuration for GitLab RPM
+http_server: "http://10.0.0.3"
+gitlab_rpm: "gitlab-ee-17.0.1-ee.0.el8.x86_64.rpm"
+
+# Admin Password
+gitlab_username: "root"
+gitlab_password: "password"
+
+gitlab_db_password_md5: "hash"
+gitlab_replicator_password_md5: "hash"
